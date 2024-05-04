@@ -19,7 +19,7 @@ Music Player is a simple web application built using HTML, CSS, and JavaScript. 
     ```
     cd music-player
     ```
-3. Open `index.html` in your web browser.
+3. Open `index.html` in your web browser using Live Preview Extension or Live Server Extension in VS Code.
 
 ## Usage
 - **Play/Pause Button**: Click to toggle between play and pause states.
