@@ -1,0 +1,113 @@
+.right_section {
+    width: 73%;
+    /* min-width: 826px; */
+    margin-left: 6px;
+    /* min-height: calc(450px + 120px + 6px); */
+    background: linear-gradient(180deg, rgba(35,35,35,1) 0%, rgba(18,18,18,1) 50%);
+    overflow: auto;
+}
+
+.right_section .header {
+    width: 100%;
+    padding: 15px;
+    gap: 10px;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.right_section .header div:nth-child(1) {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.right_section .header div:nth-child(2) {
+    gap: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.right_section .header div:nth-child(2) img {
+    width: 20px;
+}
+
+.right_section .header div:nth-child(4) div {
+    background-color: var(--green);
+    padding: 60%;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    color: var(--black);
+    font-weight: 800;
+}
+
+.right_section .header div:nth-child(3):hover {
+    scale: 1.07;
+}
+
+.popular_songs {
+    width: 180px;
+    height: calc(120px - 70px);
+    font-size: 20px;
+    padding-left: 10px;
+    margin-left: 20px;
+    color: rgb(223, 223, 223);
+    /* visibility: hidden; */
+}
+
+.songs{
+    flex-wrap: wrap;
+}
+
+.song_card_container{
+    background-color: var(--darkgray);
+    border-radius: 10px;
+    border: 1px solid rgb(50, 50, 50);
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    width: 230px;
+    height: 300px;
+    margin: 20px;
+    margin-top: 6px;
+}
+
+.image{ 
+    width: 90%;
+    height: 65%;
+    margin-top: 10px;
+    background-color: rgb(45, 45, 45);
+    border-radius: 10px;
+    position: relative;
+} 
+.play_button{
+    width: 90px;
+    position: absolute;
+    bottom: -28px;
+    right: -24px;
+    visibility: hidden;
+    transition: .2s ease-in-out;
+    opacity: 0;
+}
+
+.song_card_container:hover .play_button{
+    bottom: -20px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.image img{
+    width: 70%;
+    height: 70%;
+    margin-bottom: 20px;
+}
+
+.song_card_container div:nth-child(2){
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: large;
+}
+.song_card_container div:nth-child(3){
+    font-weight: 700;
+    color: var(--gray);
+}

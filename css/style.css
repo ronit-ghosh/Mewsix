@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: white;
+    font-family: "Raleway";
+}
+
+.main{
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+
+.container{
+    height: 89vh;
+    /* width: 99vw; */
+    position: relative;
+}
+
+body{
+    background-color: black;
+    margin: 6px;
+}
+
+li{
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.svg-container:hover {
+    color: var(--green);
+}

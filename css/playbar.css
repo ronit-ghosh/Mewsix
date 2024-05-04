@@ -1,0 +1,132 @@
+.playbar {
+    width: 100vw;
+    /* position: absolute; */
+    /* z-index: 1; */
+}
+
+.left_side {
+    width: 27%;
+
+    background-color: var(--darkgray);
+    color: var(--green);
+    margin-top: 6px;
+    align-items: center;
+    gap: 15px;
+    /* overflow: hidden; */
+    padding: 19px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: inset 1px 1px 1px rgb(42, 42, 42);
+    /* justify-content: space-evenly; */
+    position: relative;
+}
+
+#song_title {
+    width: 50%;
+    max-height: 20px;
+    overflow: hidden;
+    /* border: var(--test); */
+}
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    /* width: 100%; */
+    height: 5px;
+    background: var(--);
+    outline: none;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 13.5px;
+    height: 13.5px;
+    background: var(--green);
+    /* Green */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.volume {
+    position: absolute;
+    width: 100px;
+    top: 16.5px;
+    right: 6px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.left_side div:nth-child(2):hover {
+    color: var(--green);
+    /* max-height: 10px; */
+}
+
+.left_side img {
+    transform: rotate(-90deg);
+}
+
+.right_side {
+    width: 72%;
+    /* min-width: 826px; */
+    background-color: var(--darkgray);
+    margin-top: 6px;
+    margin-right: 12px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    flex-direction: column;
+    box-shadow: inset -1px -1px 1px rgb(42, 42, 42);
+}
+
+.buttons {
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+#song_duration {
+    position: absolute;
+    right: 50px;
+    font-family: "Montserrat";
+    bottom: 25px;
+    font-size: 15px;
+}
+
+.buttons img {
+    width: 35px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.seekbar {
+    width: 92%;
+    border: 1px solid white;
+    height: 2px;
+    margin-top: 6px;
+    position: relative;
+    cursor: pointer;
+}
+
+.seekbar div {
+    position: absolute;
+    background-color: white;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+    bottom: -4px;
+    left: 0%;
+    /* visibility: hidden; */
+}
+
+.seekbar:hover {
+    border: 1px solid var(--green);
+}
+
+.seekbar:hover div {
+    background-color: var(--green);
+    /* visibility: visible; */
+}

@@ -1,0 +1,56 @@
+/* Fonts */ 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Utility Classes */
+:root {
+    --darkgray: #121212;
+    --gray: #a7a7a7;
+    --black: #080808;
+    --green: #1ed760;
+    --test: 2px solid red;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.border_radius {
+    border-radius: 10px;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.capsule{
+    background-color: var(--black);
+    padding: 9px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.circle{
+    background-color: var(--black);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.smooth_transition{
+    transition: .2s ease-in-out;
+}
+
+.pop:hover{
+    scale: 1.02;
+}
+
+/* Custom Animations */

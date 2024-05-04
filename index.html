@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="css/rightSection.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/leftSection.css">
+    <link rel="stylesheet" href="css/playbar.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+</head>
+
+<body>
+    <div class="main flex">
+        <div class="container flex">
+            <!-- Left Section Start -->
+            <div class="left_section ">
+                <div class="home flex border_radius">
+                    <ul class="flex">
+                        <li class="flex_center"><img class="invert" src="svg/home.svg" alt="home">Home</li>
+                        <li class="flex_center smooth_transition"><img class="invert" src="svg/search.svg"
+                                alt="search">Search</li>
+                        <img class="invert hamburger2" src="svg/hamburger2.svg" alt="">
+                    </ul>
+                </div>
+                <div class="playlist border_radius">
+                    <div class="header flex">
+                        <img class="invert" src="svg/library.svg" alt="library">
+                        <span class="smooth_transition">Your Library</span>
+                        <img class="invert" src="svg/plus.svg" alt="plus">
+                        <img class="invert" src="svg/right_arrow.svg" alt="arrow">
+                    </div>
+                    <div class="list_song">
+
+                    </div>
+                </div>
+            </div>
+            <!-- Left Section End -->
+
+            <!-- Right Section Start -->
+            <div class="right_section border_radius">
+                <div class="header flex">
+                    <div class="explore_premium capsule invert smooth_transition pop">Explore Premium</div>
+                    <div class="install flex_center capsule smooth_transition pop"><img class="invert"
+                            src="svg/download.svg" alt="download"><span>Install App</span></div>
+                    <div class="flex_center circle smooth_transition pop"><img class="invert" src="svg/bell.svg"
+                            alt="bell"></div>
+                    <div class="flex_center circle">
+                        <div class="flex_center">R</div>
+                    </div>
+                    <div class="hamburger"><img class="invert" src="svg/hamburger.svg" alt=""></div>
+                </div>
+                <div class="popular_songs flex_center capsule pop smooth_transition">Popular songs</div>
+                <div class="songs flex">
+                    <div class="song_card_container flex">
+                        <div class="image flex_center">
+                            <img src="svg/music.svg" alt="song">
+                            <div class="play_button"><img src="svg/play_button.svg" alt="play"></div>
+                        </div>
+                        <div class="">Song Name</div>
+                        <div class="">Artist Name</div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Right Section End -->
+
+        </div>
+        <!-- Playbar Start -->
+        <div class="playbar flex">
+            <div class="left_side flex">
+                <div class="currently_playing"><img class="invert" src="svg/currently_playing.svg" alt="music"></div>
+                <div id="song_title" class="smooth_transition"></div>
+                <div class="volume smooth_transition"><input type="range" value="100" name="volume" class="volume" id="volume_slider"></div>
+            </div>
+
+            <div class="right_side flex_center">
+                <div class="smooth_transition seekbar flex">
+                    <div id="circle" class="smooth_transition"></div>
+                </div>
+                <div class="buttons flex">
+                    <div>
+                        <img class="invert smooth_transition" id="prev" src="svg/previous_button.svg" alt="arrow">
+                        <img class="invert smooth_transition" id="play" src="svg/play.svg" alt="play">
+                        <img class="invert smooth_transition" id="next" src="svg/next_button.svg" alt="arrow">
+                    </div>
+                    <div id="song_duration">00:00 / 00:00</div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Playbar End -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
