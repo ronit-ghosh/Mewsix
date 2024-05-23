@@ -132,7 +132,7 @@
         top: 55%;
         right: 4.1%;
     }
-    
+
 }
 
 @media (max-width: 600px) {
@@ -140,7 +140,8 @@
         display: none;
     }
     .popular_songs{
-        width: 90%;
+        width: 70%;
+        margin: auto;
     }
 
     #song_duration{
@@ -163,6 +164,9 @@
 @media (max-width: 360px) {
     #song_duration{
         right: 14px;
+    }
+    .song_card_container{
+        width: 70%;
     }
 }
 
