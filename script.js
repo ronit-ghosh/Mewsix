@@ -10,10 +10,10 @@ async function getSongs(folder) {
 
     let a = await fetch(`${folder}`);
     let response = await a.text();
-
+    
     let div = document.createElement("div");
     div.innerHTML = response;
-
+    
     let anchortags = div.getElementsByTagName("a");
     songs = [];
 
@@ -76,7 +76,7 @@ function secondsToMinutesAndSeconds(seconds) {
 
 // Displaying albums dynamically
 async function displayAlbums() {
-    let a = await fetch(`songs`);
+    let a = await fetch("songs");
     let response = await a.text();
 
     let div = document.createElement("div");
@@ -132,7 +132,7 @@ async function displayAlbums() {
 // Main Function
 async function main() {
 
-    await getSongs(`songs/music`);
+    await getSongs(`songs`);
 
     // Changing Play/Pause svgs
     play.addEventListener("click", () => {
@@ -201,11 +201,9 @@ async function main() {
     })
 
     // Volume Button
-    volume_slider.addEventListener("click", (e) => {
+    volume_slider.addEventListener("change", (e) => {
         currentSong.volume = (parseInt(e.target.value) / 100);
     })
-
-
 
     // Show albums dynamically
     displayAlbums()

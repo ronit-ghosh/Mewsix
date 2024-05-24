@@ -65,17 +65,6 @@
         margin: 0;
     }
 
-    .left_side {
-        width: 100%;
-        border-radius: 0;
-        margin: 0;
-    }
-
-    .playbar {
-        flex-direction: column;
-        padding: 0;
-    }
-
     .playbar {
         flex-direction: column;
         padding: 0;
@@ -109,14 +98,10 @@
     }
 
     #song_duration{
-        font-size: 10px;
+        font-size: 15px;
         top: 10px;
         right: 41px;
     }
-
-    /* .buttons{
-        margin-bottom: 20px;
-    } */
 
     .buttons img{
         width: 25px;
@@ -129,7 +114,7 @@
     }
 
     .volume {
-        top: 55%;
+        top: 205%;
         right: 4.1%;
     }
 
@@ -139,13 +124,15 @@
     .explore_premium{
         display: none;
     }
+    
     .popular_songs{
         width: 70%;
         margin: auto;
+        margin-top: 70px;
     }
 
     #song_duration{
-        font-size: 10px;
+        font-size: 15px;
         right: 23px;
     }
 
@@ -154,10 +141,13 @@
     }
 
     #song_title{
-        
     display: flex;
     justify-content: flex-start;
     margin-left: 10px;
+    }
+
+    .song_card_container{
+        width: 65%;
     }
 }
 
@@ -166,7 +156,7 @@
         right: 14px;
     }
     .song_card_container{
-        width: 70%;
+        width: 75%;
     }
 }
 
@@ -177,5 +167,11 @@
 
     #song_title{
         width: 60%;
+    }
+}
+
+@media (max-width: 915px) {
+    #song_title{
+        width: 50%;
     }
 }

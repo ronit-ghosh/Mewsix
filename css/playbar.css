@@ -1,7 +1,5 @@
 .playbar {
     width: 100vw;
-    /* position: absolute; */
-    /* z-index: 1; */
 }
 
 .left_side {
@@ -12,12 +10,10 @@
     margin-top: 6px;
     align-items: center;
     gap: 15px;
-    /* overflow: hidden; */
     padding: 19px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     box-shadow: inset 1px 1px 1px rgb(42, 42, 42);
-    /* justify-content: space-evenly; */
     position: relative;
 }
 
@@ -25,7 +21,6 @@
     width: 50%;
     max-height: 20px;
     overflow: hidden;
-    /* border: var(--test); */
 }
 
 
@@ -43,7 +38,6 @@ input[type="range"]::-webkit-slider-thumb {
     width: 13.5px;
     height: 13.5px;
     background: var(--green);
-    /* Green */
     cursor: pointer;
     border-radius: 50%;
 }
@@ -59,7 +53,6 @@ input[type="range"]::-webkit-slider-thumb {
 
 .left_side div:nth-child(2):hover {
     color: var(--green);
-    /* max-height: 10px; */
 }
 
 .left_side img {
@@ -68,7 +61,6 @@ input[type="range"]::-webkit-slider-thumb {
 
 .right_side {
     width: 72%;
-    /* min-width: 826px; */
     background-color: var(--darkgray);
     margin-top: 6px;
     margin-right: 12px;
@@ -119,7 +111,6 @@ input[type="range"]::-webkit-slider-thumb {
     transition: .3s ease-in-out;
     bottom: -4px;
     left: 0%;
-    /* visibility: hidden; */
 }
 
 .seekbar:hover {
@@ -128,5 +119,4 @@ input[type="range"]::-webkit-slider-thumb {
 
 .seekbar:hover div {
     background-color: var(--green);
-    /* visibility: visible; */
 }
